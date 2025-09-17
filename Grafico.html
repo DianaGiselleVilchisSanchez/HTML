@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Productividad</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<h2>Productividad semanal</h2>
+<canvas id="chart" width="400" height="200"></canvas>
+<script>
+const ctx = document.getElementById('chart').getContext('2d');
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Lun','Mar','Mié','Jue','Vie'],
+    datasets: [{
+      label: 'Tareas completadas',
+      data: [12, 19, 7, 14, 18],
+      backgroundColor: 'rgba(54,162,235,0.6)'
+    }]
+  },
+  options: { responsive:true }
+});
+</script>
+</body>
+</html>
