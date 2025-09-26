@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Trabajando</title>
+<style>
+#cargando {font-size:24px;}
+</style>
+</head>
+<body style="text-align:center;">
+<h2 id="cargando">Trabajando</h2>
+<script>
+let puntos = 0;
+setInterval(()=>{
+  puntos = (puntos + 1) % 4;
+  document.getElementById("cargando").innerText = "Trabajando" + ".".repeat(puntos);
+}, 500);
+</script>
+</body>
+</html>
