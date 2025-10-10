@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Motivación laboral</title>
+</head>
+<body style="text-align:center;">
+<h1>Frase del día</h1>
+<p id="frase"></p>
+
+<script>
+const frases = [
+  "Hazlo con pasión o no lo hagas.",
+  "Cada día cuenta, da lo mejor de ti.",
+  "El trabajo en equipo multiplica resultados.",
+  "La constancia vence al talento."
+];
+document.getElementById("frase").innerText = frases[Math.floor(Math.random() * frases.length)];
+</script>
+</body>
+</html>
